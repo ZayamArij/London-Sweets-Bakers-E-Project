@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London Sweets And Bakers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img
+          src="assets/bakery-logo.png"
+          alt="London Sweets Logo"
+          class="logo-img"
+        />
+        <a href="#" class="logo-text">London Sweets & Bakers</a>
+      </div>
+      <!-- link here -->
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <!-- Dropdown for Products -->
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#"> Our Products ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="sweet.htnl">Our Sweets</a></li>
+            <li><a href="bakery.html">Our Bakery</a></li>
+            <li><a href="gift.html">Gift Hamper</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="hamburger-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+    </nav>
+    <!-- and here -->
+    <div class="mobile-menu">
+      <a href="home.html"><i class="fas fa-home"></i> Home</a>
+      <a href="sweet.html"><i class="fa-birthday-cake"></i> Products-Sweets</a>
+      <a href="bakery.html"><i class="fa fa-pie-chart"></i> Products-Bakery</a>
+      <a href="gift.html"><i class="fa fa-gift"></i> Gift Hampers</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i>About Us</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+    <!-- ***** CROISSANT Banner ******** -->
+
+    <div
+      class="category-banner"
+      style="background-image: url('assets/croi-banner.jpg')"
+    >
+      <h2 class="banner-title">Croissants</h2>
+    </div>
+
+    <!-- Classic Butter Croissant -->
+    <section id="sweet" class="sweet">
+      <div class="products-grid four-column-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/croi.jpg" alt="Butter Croissant" />
+          </div>
+          <div class="product-info">
+            <h3>Classic Butter Croissant</h3>
+            <p>
+              A flaky and buttery French pastry with a golden crust, baked fresh
+              daily.
+            </p>
+            <p class="price">$3.00</p>
+            <button class="view-details" data-product="butter-croissant">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Cream Croissant -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/creamcroi.jpg" alt="Cream Croissant" />
+          </div>
+          <div class="product-info">
+            <h3>Cream Croissant</h3>
+            <p>
+              Soft and airy pastry filled with smooth vanilla cream and topped
+              with powdered sugar.
+            </p>
+            <p class="price">$3.50</p>
+            <button class="view-details" data-product="cream-croissant">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Chocolate Croissant -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/choco_croissant.jpg" alt="Chocolate Croissant" />
+          </div>
+          <div class="product-info">
+            <h3>Chocolate Croissant</h3>
+            <p>
+              A delicious croissant with a generous filling of melted dark
+              chocolate.
+            </p>
+            <p class="price">$3.75</p>
+            <button class="view-details" data-product="chocolate-croissant">
+              View Details
+            </button>
+          </div>
+        </div>
+        <!-- Jam Croissant -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/jam_croi.jpg" alt="Jam Croissant" />
+          </div>
+          <div class="product-info">
+            <h3>Jam Croissant</h3>
+            <p>
+              A fruity twist with a sweet raspberry jam center, lightly glazed
+              for shine.
+            </p>
+            <p class="price">$3.25</p>
+            <button class="view-details" data-product="jam-croissant">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classic Butter Croissant Modal -->
+    <div id="butter-croissant-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/croi.jpg"
+            alt="Classic Butter Croissant"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Classic Butter Croissant</h3>
+            <p class="modal-price">$3.00</p>
+            <p class="price">90 gm</p>
+            <p class="modal-description">
+              A flaky and buttery French pastry with a golden crust, freshly
+              baked every morning for that perfect crunch and softness inside.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Freshly laminated dough with real butter</li>
+                <li>Best served warm</li>
+                <li>Contains gluten, dairy, and eggs</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per croissant)</h4>
+              <p>Calories: 270 | Fat: 15g | Carbs: 28g | Protein: 5g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cream Croissant Modal -->
+    <div id="cream-croissant-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/creamcroi.jpg"
+            alt="Cream Croissant"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Cream Croissant</h3>
+            <p class="modal-price">$3.50</p>
+            <p class="price">90 gm</p>
+            <p class="modal-description">
+              A light croissant filled with smooth vanilla pastry cream and
+              dusted with powdered sugar for a sweet finish.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Vanilla pastry cream filling</li>
+                <li>Contains gluten, dairy, and eggs</li>
+                <li>Best enjoyed chilled or slightly warm</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per piece)</h4>
+              <p>Calories: 310 | Fat: 17g | Carbs: 30g | Protein: 4g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chocolate Croissant Modal -->
+    <div id="chocolate-croissant-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/choco_croissant.jpg"
+            alt="Chocolate Croissant"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Chocolate Croissant</h3>
+            <p class="modal-price">$3.75</p>
+            <p class="price">90 gm</p>
+            <p class="modal-description">
+              This buttery croissant is filled with dark chocolate and topped
+              with a light chocolate glaze for a rich indulgence.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Made with semi-sweet dark chocolate</li>
+                <li>Contains gluten, dairy, and eggs</li>
+                <li>Perfect with coffee or hot chocolate</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per piece)</h4>
+              <p>Calories: 330 | Fat: 18g | Carbs: 35g | Protein: 5g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jam Croissant Modal -->
+    <div id="jam-croissant-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/jam_croi.jpg"
+            alt="Jam Croissant"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Jam Croissant</h3>
+            <p class="modal-price">$3.25</p>
+            <p class="price">90 gm</p>
+            <p class="modal-description">
+              A sweet croissant filled with raspberry jam, topped with a light
+              sugar glaze. Fruity, flaky, and delicious.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Filled with house-made raspberry jam</li>
+                <li>Contains gluten, dairy, and eggs</li>
+                <li>Best served slightly warm</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per piece)</h4>
+              <p>Calories: 300 | Fat: 14g | Carbs: 34g | Protein: 4g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bread and roll banner -->
+    <div
+      class="category-banner"
+      style="background-image: url('assets/bread-banner.avif')"
+    >
+      <h2 class="banner-title">Bread And Rolls</h2>
+    </div>
+
+    <section>
+      <div class="products-grid four-column-grid">
+        <!-- Focaccia -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/focaccia.jpg" alt="Focaccia" />
+          </div>
+          <div class="product-info">
+            <h3>Focaccia</h3>
+            <p>
+              Italian flatbread infused with olive oil and rosemary, crispy on
+              the outside and soft inside.
+            </p>
+            <p class="price">$4.50</p>
+            <button class="view-details" data-product="focaccia">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Cheesy Garlic Bread -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/garlic_bread.jpg" alt="Cheesy Garlic Bread" />
+          </div>
+          <div class="product-info">
+            <h3>Cheesy Garlic Bread</h3>
+            <p>
+              Crunchy baguette topped with melted mozzarella and garlic butter
+              for the ultimate comfort bite.
+            </p>
+            <p class="price">$3.80</p>
+            <button class="view-details" data-product="garlic-bread">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Marmite Sausage Roll -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/sausage_roll.jpg" alt="Marmite Sausage Roll" />
+          </div>
+          <div class="product-info">
+            <h3>Marmite Sausage Roll</h3>
+            <p>
+              Flaky pastry filled with seasoned sausage and a savory Marmite
+              twist, baked to perfection.
+            </p>
+            <p class="price">$4.00</p>
+            <button class="view-details" data-product="marmite-roll">
+              View Details
+            </button>
+          </div>
+        </div>
+        <!-- Pull-Apart Garlic Roll -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/garlic_rolls.jpg" alt="Pull-Apart Garlic Roll" />
+          </div>
+          <div class="product-info">
+            <h3>Pull-Apart Garlic Roll</h3>
+            <p>
+              Soft, fluffy rolls infused with garlic butter and herbs — baked
+              golden and perfect for sharing.
+            </p>
+            <p class="price">$3.75</p>
+            <button class="view-details" data-product="garlic-roll">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Focaccia Modal -->
+    <div id="focaccia-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/focaccia.jpg"
+            alt="Focaccia"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Focaccia</h3>
+            <p class="modal-price">$4.50</p>
+            <p class="price">200 gm</p>
+            <p class="modal-description">
+              A classic Italian flatbread infused with olive oil, herbs, and sea
+              salt — crispy outside, soft and airy inside.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Made with rosemary, thyme & extra virgin olive oil</li>
+                <li>Serves 4–6 slices</li>
+                <li>Contains gluten and may contain traces of nuts</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per slice)</h4>
+              <p>Calories: 190 | Fat: 7g | Carbs: 25g | Protein: 4g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cheesy Garlic Bread Modal -->
+    <div id="garlic-bread-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/garlic_bread.jpg"
+            alt="Cheesy Garlic Bread"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Cheesy Garlic Bread</h3>
+            <p class="modal-price">$3.80</p>
+            <p class="price">200 gm</p>
+            <p class="modal-description">
+              Crusty bread topped with garlic butter and gooey mozzarella, baked
+              until golden brown and bubbling.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Fresh garlic butter blend</li>
+                <li>Generous cheese topping</li>
+                <li>Contains gluten and dairy</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per piece)</h4>
+              <p>Calories: 220 | Fat: 12g | Carbs: 20g | Protein: 6g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marmite Sausage Roll Modal -->
+    <div id="marmite-roll-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/sausage_roll.jpg"
+            alt="Marmite Sausage Roll"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Marmite Sausage Roll</h3>
+            <p class="modal-price">$4.00</p>
+            <p class="price">200 gm</p>
+            <p class="modal-description">
+              Flaky puff pastry filled with savory sausage and brushed with
+              Marmite glaze — a rich British-inspired treat.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Made with premium beef sausage</li>
+                <li>Brushed with Marmite butter</li>
+                <li>Contains gluten, meat, dairy</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per piece)</h4>
+              <p>Calories: 310 | Fat: 20g | Carbs: 24g | Protein: 8g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pull-Apart Garlic Roll Modal -->
+    <div id="garlic-roll-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/garlic_rolls.jpg"
+            alt="Pull-Apart Garlic Roll"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Pull-Apart Garlic Roll</h3>
+            <p class="modal-price">$3.75</p>
+            <p class="price">200 gm</p>
+            <p class="modal-description">
+              Fluffy dinner rolls baked together and brushed with garlic herb
+              butter — warm, pull-apart style.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Pack of 6 rolls</li>
+                <li>Made with garlic, parsley, and butter</li>
+                <li>Contains gluten, dairy, and eggs</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per roll)</h4>
+              <p>Calories: 180 | Fat: 8g | Carbs: 22g | Protein: 4g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie banner -->
+    <div
+      class="category-banner"
+      style="background-image: url('assets/pie-banner.jpg')"
+    >
+      <h2 class="banner-title">Pie</h2>
+    </div>
+
+    <section>
+      <div class="products-grid four-column-grid">
+        <!-- Spinach Pie -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/spinach_pie.jpg" alt="Spinach Pie" />
+          </div>
+          <div class="product-info">
+            <h3>Spinach Pie</h3>
+            <p>
+              A savory Greek-style pie filled with fresh spinach, feta cheese,
+              and herbs wrapped in golden pastry.
+            </p>
+            <p class="price">$4.25</p>
+            <button class="view-details" data-product="spinach-pie">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Mushroom Pie -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/mushroom_pie.jpg" alt="Mushroom Pie" />
+          </div>
+          <div class="product-info">
+            <h3>Mushroom Pie</h3>
+            <p>
+              A flaky pastry filled with a creamy blend of mushrooms, onions,
+              and herbs—rich and comforting.
+            </p>
+            <p class="price">$4.50</p>
+            <button class="view-details" data-product="mushroom-pie">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Steak Pie -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/steak_pie.jpg" alt="Steak Pie" />
+          </div>
+          <div class="product-info">
+            <h3>Steak Pie</h3>
+            <p>
+              Classic British-style pie loaded with tender chunks of beef in
+              savory gravy, encased in a golden crust.
+            </p>
+            <p class="price">$5.50</p>
+            <button class="view-details" data-product="steak-pie">
+              View Details
+            </button>
+          </div>
+        </div>
+        <!-- Chicken Pie -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/chicken_pie.webp" alt="Chicken Pie" />
+          </div>
+          <div class="product-info">
+            <h3>Chicken Pie</h3>
+            <p>
+              Tender chicken chunks in creamy herb gravy wrapped in golden flaky
+              pastry — a comforting classic.
+            </p>
+            <p class="price">$4.75</p>
+            <button class="view-details" data-product="chicken-pie">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Spinach Pie Modal -->
+    <div id="spinach-pie-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/spinach_pie.jpg"
+            alt="Spinach Pie"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Spinach Pie</h3>
+            <p class="modal-price">$4.25</p>
+            <p class="price">250 gm</p>
+            <p class="modal-description">
+              A savory Greek-style pie filled with fresh spinach, feta cheese,
+              herbs, and wrapped in golden phyllo pastry.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Filled with spinach, feta & onion</li>
+                <li>Wrapped in phyllo dough</li>
+                <li>Contains dairy, gluten, and eggs</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per slice)</h4>
+              <p>Calories: 260 | Fat: 14g | Carbs: 20g | Protein: 7g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mushroom Pie Modal -->
+    <div id="mushroom-pie-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/mushroom_pie.jpg"
+            alt="Mushroom Pie"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Mushroom Pie</h3>
+            <p class="modal-price">$4.50</p>
+            <p class="price">250 gm</p>
+            <p class="modal-description">
+              A rich, earthy pie filled with sautéed mushrooms, onions, and
+              creamy cheese sauce in a flaky crust.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Filled with button & portobello mushrooms</li>
+                <li>Vegetarian option</li>
+                <li>Contains dairy and gluten</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per slice)</h4>
+              <p>Calories: 280 | Fat: 16g | Carbs: 24g | Protein: 6g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Steak Pie Modal -->
+    <div id="steak-pie-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/steak_pie.jpg"
+            alt="Steak Pie"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Steak Pie</h3>
+            <p class="modal-price">$5.50</p>
+            <p class="price">250 gm</p>
+            <p class="modal-description">
+              A hearty pie filled with tender chunks of beef simmered in savory
+              gravy, wrapped in golden pastry.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Made with slow-cooked beef and onion</li>
+                <li>Traditional British-style</li>
+                <li>Contains meat, gluten, and dairy</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per slice)</h4>
+              <p>Calories: 340 | Fat: 20g | Carbs: 26g | Protein: 10g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chicken Pie Modal -->
+    <div id="chicken-pie-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/chicken_pie.webp"
+            alt="Chicken Pie"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Chicken Pie</h3>
+            <p class="modal-price">$4.75</p>
+            <p class="price">250 gm</p>
+            <p class="modal-description">
+              Creamy chicken filling with herbs and vegetables wrapped in a
+              crisp and golden puff pastry.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Includes chicken breast, carrots & peas</li>
+                <li>Golden flaky crust</li>
+                <li>Contains meat, gluten, and dairy</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per slice)</h4>
+              <p>Calories: 320 | Fat: 17g | Carbs: 29g | Protein: 9g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- other item banner -->
+    <div
+      class="category-banner"
+      style="background-image: url('assets/other-banner.jpg')"
+    >
+      <h2 class="banner-title">Other Items</h2>
+    </div>
+
+    <section>
+      <div class="products-grid four-column-grid">
+        <!-- Brie Bite -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/brie_bites.jpg" alt="Brie Bite" />
+          </div>
+          <div class="product-info">
+            <h3>Brie Bite</h3>
+            <p>
+              Mini puff pastry filled with creamy brie and a touch of cranberry
+              — a melt-in-your-mouth bite.
+            </p>
+            <p class="price">$2.75</p>
+            <button class="view-details" data-product="brie-bite">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Cheese Straws -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/cheese_straws.jpg" alt="Cheese Straws" />
+          </div>
+          <div class="product-info">
+            <h3>Cheese Straws</h3>
+            <p>
+              Crisp and cheesy puff pastry twists made with aged cheddar —
+              perfect for snacking.
+            </p>
+            <p class="price">$3.00</p>
+            <button class="view-details" data-product="cheese-straws">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Onion Muffins -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/onoin_muffin.jpg" alt="Onion Muffins" />
+          </div>
+          <div class="product-info">
+            <h3>Onion Muffins</h3>
+            <p>
+              Savory muffins baked with caramelized onions and cheddar, perfect
+              as a warm treat or side.
+            </p>
+            <p class="price">$2.50</p>
+            <button class="view-details" data-product="onion-muffins">
+              View Details
+            </button>
+          </div>
+        </div>
+        <!-- Palmiers -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/palmiers.jpg" alt="Palmiers" />
+          </div>
+          <div class="product-info">
+            <h3>Palmiers</h3>
+            <p>
+              Crispy, golden puff pastry hearts with a caramelized sugar coating
+              — sweet, buttery, and irresistible.
+            </p>
+            <p class="price">$2.50</p>
+            <button class="view-details" data-product="palmiers">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Brie Bite Modal -->
+    <div id="brie-bite-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/brie_bites.jpg"
+            alt="Brie Bite"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Brie Bite</h3>
+            <p class="modal-price">$2.75</p>
+            <p class="price">80 gm</p>
+            <p class="modal-description">
+              Mini puff pastries filled with creamy brie and a hint of cranberry
+              — the perfect sweet-savory snack.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Pack of 3 mini bites</li>
+                <li>Contains dairy, gluten</li>
+                <li>Best served warm</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per piece)</h4>
+              <p>Calories: 160 | Fat: 10g | Carbs: 14g | Protein: 3g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cheese Straws Modal -->
+    <div id="cheese-straws-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/cheese_straws.jpg"
+            alt="Cheese Straws"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Cheese Straws</h3>
+            <p class="modal-price">$3.00</p>
+            <p class="price">80 gm</p>
+            <p class="modal-description">
+              Crispy and cheesy puff pastry twists made with sharp cheddar —
+              perfect for snacking or dipping.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Pack of 5 straws</li>
+                <li>Contains dairy, gluten</li>
+                <li>Lightly seasoned with paprika</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per straw)</h4>
+              <p>Calories: 90 | Fat: 6g | Carbs: 8g | Protein: 2g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Onion Muffins Modal -->
+    <div id="onion-muffins-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/onoin_muffin.jpg"
+            alt="Onion Muffins"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Onion Muffins</h3>
+            <p class="modal-price">$2.50</p>
+            <p class="price">80 gm</p>
+            <p class="modal-description">
+              Savory muffins loaded with caramelized onions and cheddar — a
+              soft, flavorful side or snack.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Pack of 2 muffins</li>
+                <li>Contains gluten, dairy, eggs</li>
+                <li>Perfect warmed with butter</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per muffin)</h4>
+              <p>Calories: 210 | Fat: 11g | Carbs: 22g | Protein: 5g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Palmiers Modal -->
+    <div id="palmiers-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-product">
+          <img
+            src="assets/palmiers.jpg"
+            alt="Palmiers"
+            class="modal-product-image"
+          />
+          <div class="modal-product-info">
+            <h3>Palmiers</h3>
+            <p class="modal-price">$2.50</p>
+            <p class="price">80 gm</p>
+            <p class="modal-description">
+              Sweet, crispy puff pastry shaped into hearts and coated with
+              caramelized sugar — a French classic.
+            </p>
+            <div class="modal-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Pack of 4 pieces</li>
+                <li>Vegan-friendly</li>
+                <li>Contains gluten</li>
+              </ul>
+            </div>
+            <div class="modal-nutrition">
+              <h4>Nutrition Information (per piece)</h4>
+              <p>Calories: 120 | Fat: 6g | Carbs: 15g | Protein: 1g</p>
+            </div>
+            <div class="modal-actions">
+              <button class="btn-cart">
+                <i class="fas fa-download"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>London Sweets</h3>
+        <div class="social-links">
+          <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.bing.com/search?q=twitter+sign+up&qs=SC&pq=twiitter+s&sc=12-10&cvid=ACEFA908FC9F4120BB28429226B09890&FORM=QBRE&sp=1&lq=0"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.pinterest.com/login/"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+        </div>
+        <p>&copy; 2023 London Sweets. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

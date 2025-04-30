@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London Sweets And Bakers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img
+          src="assets/bakery-logo.png"
+          alt="London Sweets Logo"
+          class="logo-img"
+        />
+        <a href="#" class="logo-text">London Sweets & Bakers</a>
+      </div>
+      <!-- link here -->
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <!-- Dropdown for Products -->
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#"> Our Products ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="sweet.html">Our Sweets</a></li>
+            <li><a href="bakery.html">Our Bakery</a></li>
+            <li><a href="gift.html">Gift Hamper</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="hamburger-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+    </nav>
+    <!-- and here -->
+    <div class="mobile-menu">
+      <a href="home.html"><i class="fas fa-home"></i> Home</a>
+      <a href="sweet.html"><i class="fa-birthday-cake"></i> Products-Sweets</a>
+      <a href="bakery.html"><i class="fa fa-pie-chart"></i> Products-Bakery</a>
+      <a href="gift.html"><i class="fa fa-gift"></i> Gift Hampers</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i>About Us</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+    <!-- About Us Banner -->
+    <div
+      class="category-banner"
+      style="background-image: url('assets/about.png')"
+    >
+      <h2 class="banner-title">About London Bakery</h2>
+    </div>
+    <!-- Story Section -->
+    <section
+      id="about-story"
+      class="story-section"
+      style="padding: 40px 20px; text-align: center"
+    >
+      <h2 class="section-title">Our Story</h2>
+      <p
+        style="
+          max-width: 800px;
+          margin: 20px auto;
+          font-size: 18px;
+          line-height: 1.8;
+        "
+      >
+        Founded in the heart of London, London Bakery began as a cozy
+        neighborhood shop passionate about creating authentic sweets, cakes, and
+        savory treats. With a dedication to quality ingredients, timeless
+        recipes, and modern flavors, we quickly grew into a beloved destination
+        for families, food lovers, and celebration seekers.
+        <br /><br />
+        Whether it's handcrafted croissants, decadent chocolate cakes, or
+        customized event hampers, London Bakery believes every bite should be a
+        memorable experience. Join us as we continue our journey — blending
+        tradition with innovation, love, and a sprinkle of London charm in
+        everything we bake.
+      </p>
+    </section>
+    <section>
+      <!-- Upcoming Events -->
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="products-grid">
+        <!-- Valentine's Day Special -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/val-event.png" alt="Valentine's Day Special" />
+          </div>
+          <div class="product-info">
+            <h3>Valentine's Day Special</h3>
+            <p>
+              Special dessert menu and gift hampers launching this February.
+            </p>
+            <p class="price">Feb 10 - Feb 15, 2025</p>
+          </div>
+        </div>
+
+        <!-- London Sweet Expo -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/expo.png" alt="London Sweet Expo" />
+          </div>
+          <div class="product-info">
+            <h3>London Sweet Expo</h3>
+            <p>
+              Join our booth at the largest dessert and sweets exhibition in
+              London!
+            </p>
+            <p class="price">Jun 12 - Jun 14, 2025</p>
+          </div>
+        </div>
+
+        <!-- Summer Picnic Hampers -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/summer.png" alt="Summer Picnic Hampers" />
+          </div>
+          <div class="product-info">
+            <h3>Summer Picnic Hampers</h3>
+            <p>
+              Launching new picnic hampers — perfect for warm sunny days in the
+              park!
+            </p>
+            <p class="price">July 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Past Events -->
+      <h2 class="section-title">Past Highlights</h2>
+      <div class="products-grid">
+        <!-- Christmas Market 2024 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/chris.png" alt="Christmas Market" />
+          </div>
+          <div class="product-info">
+            <h3>Christmas Market 2024</h3>
+            <p>
+              Our festive stall was a huge success with gingerbread, fruit
+              cakes, and mulled wine specials.
+            </p>
+            <p class="price">Dec 2024</p>
+          </div>
+        </div>
+
+        <!-- London Food Festival -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1606787366850-de6330128bfc"
+              alt="London Food Festival"
+            />
+          </div>
+          <div class="product-info">
+            <h3>London Food Festival</h3>
+            <p>
+              We showcased our signature pastries and sweet treats to thousands
+              of food lovers.
+            </p>
+            <p class="price">Aug 2024</p>
+          </div>
+        </div>
+
+        <!-- Mother's Day High Tea -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/mother.png" alt="Mother's Day High Tea" />
+          </div>
+          <div class="product-info">
+            <h3>Mother's Day High Tea</h3>
+            <p>
+              Exclusive Mother's Day tea set menu featuring cupcakes, macarons,
+              and fruit tarts.
+            </p>
+            <p class="price">May 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Meet Our Team Section -->
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="products-grid four-column-grid">
+        <!-- Team Member 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/sara.png" alt="Sarah - Head Baker" />
+          </div>
+          <div class="product-info">
+            <h3>Sarah Johnson</h3>
+            <p class="price">Founder & Head Baker</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/david.png" alt="David - Pastry Chef" />
+          </div>
+          <div class="product-info">
+            <h3>David Wilson</h3>
+            <p class="price">Pastry Chef</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/emily.png" alt="Emily - Cake Decorator" />
+          </div>
+          <div class="product-info">
+            <h3>Emily Davis</h3>
+            <p class="price">Cake Decorator</p>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="assets/micheal.png"
+              alt="Michael - Chocolate Specialist"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Michael Brown</h3>
+            <p class="price">Chocolate Specialist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="container">
+        <h2 class="section-title">Our Core Values</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Passion</h3>
+            <p>
+              We pour our hearts into every creation, ensuring each bite is
+              filled with love and dedication.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Quality</h3>
+            <p>
+              Only the finest ingredients make it into our kitchen. We never
+              compromise on quality.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <h3>Joy</h3>
+            <p>
+              Our ultimate goal is to bring happiness through our sweet
+              creations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <h3>London Sweets</h3>
+        <div class="social-links">
+          <a href="https://web.facebook.com/?_rdc=1&_rdr#"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.bing.com/search?q=twitter+sign+up&qs=SC&pq=twiitter+s&sc=12-10&cvid=ACEFA908FC9F4120BB28429226B09890&FORM=QBRE&sp=1&lq=0"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.pinterest.com/login/"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+        </div>
+        <p>&copy; 2023 London Sweets. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

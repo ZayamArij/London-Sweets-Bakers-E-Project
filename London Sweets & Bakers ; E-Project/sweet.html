@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Sweets And Bakers </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+          <img
+            src="assets/bakery-logo.png"
+            alt="London Sweets Logo"
+            class="logo-img"
+          />
+          <a href="#" class="logo-text">London Sweets & Bakers</a>
+        </div>
+        <!-- link here -->
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+           <!-- Dropdown for Products -->
+           
+          
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="dropdown" > 
+            <a href="#"> Our Products ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="sweet.htnl">Our Sweets</a></li>
+              <li><a href="bakery.html">Our Bakery</a></li>
+              <li><a href="gift.html">Gift Hamper</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+        <div class="hamburger-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </div>
+      </nav>
+      <!-- and here -->
+      <div class="mobile-menu">
+        <a href="home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="sweet.html"><i class=" fa-birthday-cake"></i> Products-Sweets</a>
+        <a href="bakery.html"><i class="fa fa-pie-chart"></i> Products-Bakery</a>
+        <a href="gift.html"><i class="fa fa-gift"></i> Gift Hampers</a>
+        <a href="#"><i class="fas fa-info-circle"></i>About Us</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+      </div>
+      <!-- Cakes Banner -->
+<div class="category-banner" style="background-image: url('assets/cakes_banner.jpg');">
+    <h2 class="banner-title"> Cakes</h2>
+  </div>
+<!-- Cakes Cards Section -->
+ <section>
+<div class="products-grid four-column-grid">
+
+    <!-- Lotus Cake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/LotuCake.webp" alt="Lotus Cake" />
+      </div>
+      <div class="product-info">
+        <h3>Lotus Cake</h3>
+        <p>Creamy vanilla cake layered with Lotus Biscoff spread and topped with crushed biscuits.</p>
+        <p class="price">$32.00</p>
+        
+        <button class="view-details" data-product="lotus-cake">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Tres Leches Cake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/Three20Cake.webp" alt="Tres Leches Cake" />
+      </div>
+      <div class="product-info">
+        <h3>Tres Leches Cake</h3>
+        <p>Soft sponge cake soaked in three types of milk and topped with fresh cream.</p>
+        <p class="price">$30.00</p>
+        
+        <button class="view-details" data-product="tres-leches-cake">View Details</buttton>
+      </div>
+    </div>
+  
+    <!-- Salted Caramel Cake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/Salted_Cake.webp" alt="Salted Caramel Cake" />
+      </div>
+      <div class="product-info">
+        <h3>Salted Caramel Cake</h3>
+        <p>Decadent chocolate cake layers filled and frosted with salted caramel buttercream.</p>
+        <p class="price">$34.00</p>
+        
+        <button class="view-details" data-product="salted-caramel-cake">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Lemon Cheesecake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/chese cake.webp" alt="Lemon Cheesecake" />
+      </div>
+      <div class="product-info">
+        <h3>Lemon Cheesecake</h3>
+        <p>Creamy baked cheesecake with a zesty lemon flavor on a buttery biscuit crust.</p>
+        <p class="price">$28.00</p>
+        
+        <button class="view-details" data-product="lemon-cheesecake">View Details</button>
+      </div>
+    </div>
+  
+  </div>
+</section>
+<!-- Lotus Cake Modal -->
+<div id="lotus-cake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/LotuCake.webp" alt="Lotus Cake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Lotus Cake</h3>
+          <p class="modal-price">$32.00</p>
+          <p class="price">1 kg</p>
+          <p class="modal-description">
+            Creamy vanilla cake layered with Lotus Biscoff spread and topped with crushed Lotus biscuits for a rich caramel flavor.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Three layers of vanilla sponge</li>
+              <li>Lotus Biscoff frosting and topping</li>
+              <li>Contains gluten, dairy, and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per slice)</h4>
+            <p>Calories: 350 | Fat: 20g | Carbs: 38g | Protein: 5g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Tres Leches Cake Modal -->
+  <div id="tres-leches-cake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/Three20Cake.webp" alt="Tres Leches Cake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Tres Leches Cake</h3>
+          <p class="modal-price">$30.00</p>
+          <p class="price">1 kg</p>
+          <p class="modal-description">
+            Light sponge cake soaked in three types of milk: evaporated, condensed, and heavy cream, topped with fresh whipped cream.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>8\" round, serves 8–10 people</li>
+              <li>Authentic Latin American recipe</li>
+              <li>Contains dairy, gluten, and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per slice)</h4>
+            <p>Calories: 320 | Fat: 18g | Carbs: 30g | Protein: 6g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Salted Caramel Cake Modal -->
+  <div id="salted-caramel-cake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/Salted_Cake.webp" alt="Salted Caramel Cake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Salted Caramel Cake</h3>
+          <p class="modal-price">$34.00</p>
+          <p class="price">1 kg</p>
+          <p class="modal-description">
+            Moist chocolate cake layered with salted caramel buttercream, topped with a rich caramel drizzle and sea salt flakes.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Three layers of chocolate sponge</li>
+              <li>Salted caramel frosting and filling</li>
+              <li>Contains dairy, gluten, and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per slice)</h4>
+            <p>Calories: 400 | Fat: 24g | Carbs: 42g | Protein: 5g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Lemon Cheesecake Modal -->
+  <div id="lemon-cheesecake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/chese cake.webp" alt="Lemon Cheesecake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Lemon Cheesecake</h3>
+          <p class="modal-price">$28.00</p>
+          <p class="price">1 kg</p>
+          <p class="modal-description">
+            Creamy baked cheesecake with a refreshing lemon zest flavor, finished with a light lemon glaze over a biscuit crust.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>7\" round, serves 6–8 people</li>
+              <li>Made with real lemon juice and zest</li>
+              <li>Contains dairy, gluten, and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per slice)</h4>
+            <p>Calories: 310 | Fat: 20g | Carbs: 28g | Protein: 6g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Donuts Banner -->
+<div class="category-banner" style="background-image: url('assets/donut_banner.jpg');">
+    <h2 class="banner-title">Our Donuts</h2>
+  </div>
+<!-- Donuts Cards Section -->
+ <section>
+<div class="products-grid four-column-grid">
+
+    <!-- Glazed Donut -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/glazed.webp" alt="Glazed Donut" />
+      </div>
+      <div class="product-info">
+        <h3>Glazed Donut</h3>
+        <p>Soft and fluffy classic yeast donut dipped in a sweet vanilla glaze.</p>
+        <p class="price">$2.00</p>
+        
+        <button class="view-details" data-product="glazed-donut">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Belgium Dream Donut -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/belgium.webp" alt="Belgium Dream Donut" />
+      </div>
+      <div class="product-info">
+        <h3>Belgium Dream Donut</h3>
+        <p>Rich chocolate-filled donut topped with Belgian chocolate glaze and sprinkles.</p>
+        <p class="price">$2.50</p>
+    
+        <button class="view-details" data-product="belgium-donut">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Ferrero Donut -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/ferrero.webp" alt="Ferrero Donut" />
+      </div>
+      <div class="product-info">
+        <h3>Ferrero Donut</h3>
+        <p>Luxury donut filled with Nutella and topped with Ferrero Rocher pieces and chocolate drizzle.</p>
+        <p class="price">$3.00</p>
+        <button class="view-details" data-product="ferrero-donut">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Velvet Cream Donut -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/velvet.webp" alt="Velvet Cream Donut" />
+      </div>
+      <div class="product-info">
+        <h3>Velvet Cream Donut</h3>
+        <p>Red velvet donut filled with light cream cheese frosting and dipped in a white chocolate glaze.</p>
+        <p class="price">$2.75</p>
+        
+        <button class="view-details" data-product="velvet-donut">View Details</button>
+      </div>
+    </div>
+  
+  </div>
+</section>
+<!-- Glazed Donut Modal -->
+<div id="glazed-donut-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/glazed.webp" alt="Glazed Donut" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Glazed Donut</h3>
+          <p class="modal-price">$2.00</p>
+          <p class="price">120 gm</p>
+          <p class="modal-description">
+            Classic light and airy donut dipped in smooth vanilla glaze — the perfect bite of sweetness.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Made fresh daily</li>
+              <li>Contains gluten, dairy, eggs</li>
+              <li>Best enjoyed within 24 hours</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per donut)</h4>
+            <p>Calories: 260 | Fat: 12g | Carbs: 32g | Protein: 4g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Belgium Dream Donut Modal -->
+  <div id="belgium-donut-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/belgium.webp" alt="Belgium Dream Donut" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Belgium Dream Donut</h3>
+          <p class="modal-price">$2.50</p>
+          <p class="price">120 gm</p>
+          <p class="modal-description">
+            Filled with rich chocolate ganache and coated in silky Belgian chocolate — a true dream come true.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Premium Belgian chocolate</li>
+              <li>Contains gluten, dairy, eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per donut)</h4>
+            <p>Calories: 320 | Fat: 18g | Carbs: 34g | Protein: 5g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Ferrero Donut Modal -->
+  <div id="ferrero-donut-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/ferrero.webp" alt="Ferrero Donut" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Ferrero Donut</h3>
+          <p class="modal-price">$3.00</p>
+          <p class="price">120 gm</p>
+          <p class="modal-description">
+            Chocolate donut filled with Nutella, topped with Ferrero Rocher chunks and drizzled with chocolate.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Nutella filled</li>
+              <li>Contains nuts, dairy, gluten</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per donut)</h4>
+            <p>Calories: 380 | Fat: 22g | Carbs: 36g | Protein: 6g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Velvet Cream Donut Modal -->
+  <div id="velvet-donut-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/velvet.webp" alt="Velvet Cream Donut" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Velvet Cream Donut</h3>
+          <p class="modal-price">$2.75</p>
+          <p class="price">120 gm</p>
+          <p class="modal-description">
+            Red velvet donut with cream cheese filling, topped with a silky white chocolate glaze.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Contains dairy, gluten, eggs</li>
+              <li>Soft, rich, and indulgent</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per donut)</h4>
+            <p>Calories: 340 | Fat: 18g | Carbs: 36g | Protein: 5g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Cupcakes Banner -->
+<div class="category-banner" style="background-image: url('assets/cupcake_banner\ \(1\).webp');">
+    <h2 class="banner-title">Our Cupcakes</h2>
+  </div>
+<!-- Cupcakes Cards Section -->
+ <section>
+<div class="products-grid four-column-grid">
+
+    <!-- Oreo Cookie Cupcake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/Oreo.webp" alt="Oreo Cookie Cupcake" />
+      </div>
+      <div class="product-info">
+        <h3>Oreo Cookie Cupcake</h3>
+        <p>Moist chocolate cupcake topped with Oreo buttercream and a mini Oreo cookie.</p>
+        <p class="price">$2.50</p>
+        <button class="view-details" data-product="oreo-cupcake">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Classic Chocolate Cupcake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/Classic.webp" alt="Classic Chocolate Cupcake" />
+      </div>
+      <div class="product-info">
+        <h3>Classic Chocolate Cupcake</h3>
+        <p>Rich chocolate sponge topped with decadent chocolate buttercream frosting.</p>
+        <p class="price">$2.25</p>
+        <button class="view-details" data-product="chocolate-cupcake">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Original Malt Cupcake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/Malt.webp" alt="Original Malt Cupcake" />
+      </div>
+      <div class="product-info">
+        <h3>Original Malt Cupcake</h3>
+        <p>Vanilla malt cupcake with light malted milk frosting — a nostalgic treat.</p>
+        <p class="price">$2.75</p>
+        <button class="view-details" data-product="malt-cupcake">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Choco Hazelnut Cupcake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/Hazelnut.webp" alt="Choco Hazelnut Cupcake" />
+      </div>
+      <div class="product-info">
+        <h3>Choco Hazelnut Cupcake</h3>
+        <p>Moist chocolate cupcake filled with hazelnut spread and topped with rich frosting.</p>
+        <p class="price">$2.90</p>
+        <button class="view-details" data-product="hazelnut-cupcake">View Details</button>
+      </div>
+    </div>
+  
+  </div>
+</section>
+<!-- Oreo Cookie Cupcake Modal -->
+<div id="oreo-cupcake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/Oreo.webp" alt="Oreo Cookie Cupcake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Oreo Cookie Cupcake</h3>
+          <p class="modal-price">$2.50</p>
+          <p class="price">100 gm</p>
+          <p class="modal-desription">
+            Soft chocolate cupcake frosted with creamy Oreo buttercream and topped with a mini Oreo.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Contains gluten, dairy, eggs</li>
+              <li>Best served fresh</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per cupcake)</h4>
+            <p>Calories: 310 | Fat: 16g | Carbs: 35g | Protein: 4g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Classic Chocolate Cupcake Modal -->
+  <div id="chocolate-cupcake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/Classic.webp" alt="Classic Chocolate Cupcake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Classic Chocolate Cupcake</h3>
+          <p class="modal-price">$2.25</p>
+          <p class="price">100 gm</p>
+          <p class="modal-description">
+            Rich, moist chocolate cupcake topped with thick chocolate buttercream frosting — a timeless favorite.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Contains gluten, dairy, eggs</li>
+              <li>Rich chocolate flavor</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per cupcake)</h4>
+            <p>Calories: 290 | Fat: 15g | Carbs: 32g | Protein: 4g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Original Malt Cupcake Modal -->
+  <div id="malt-cupcake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/Malt.webp" alt="Original Malt Cupcake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Original Malt Cupcake</h3>
+          <p class="modal-price">$2.75</p>
+          <p class="price">100 gm</p>
+          <p class="modal-description">
+            Light and fluffy vanilla cupcake with a nostalgic malted milk frosting.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Contains dairy, gluten, eggs</li>
+              <li>Perfect for malt lovers!</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per cupcake)</h4>
+            <p>Calories: 300 | Fat: 14g | Carbs: 34g | Protein: 5g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Choco Hazelnut Cupcake Modal -->
+  <div id="hazelnut-cupcake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/Hazelnut.webp" alt="Choco Hazelnut Cupcake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Choco Hazelnut Cupcake</h3>
+          <p class="modal-price">$2.90</p>
+          <p class="price">100 gm</p>
+          <p class="modal-description">
+            Moist chocolate cupcake with hazelnut filling, topped with rich hazelnut buttercream.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Contains nuts, dairy, gluten, eggs</li>
+              <li>Nutella lovers' favorite!</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per cupcake)</h4>
+            <p>Calories: 340 | Fat: 18g | Carbs: 36g | Protein: 5g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Cheesecakes & Brûlée Banner -->
+<div class="category-banner" style="background-image: url('assets/brulee_banner.jpg');">
+    <h2 class="banner-title">Cheesecakes & Crème Brûlée</h2>
+  </div>
+<!-- Cheesecakes & Brûlée Cards Section -->
+ <section>
+<div class="products-grid four-column-grid">
+
+    <!-- Choco Cream Brûlée -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/coco_brulee.webp" alt="Choco Cream Brûlée" />
+      </div>
+      <div class="product-info">
+        <h3>Choco Cream Brûlée</h3>
+        <p>Classic crème brûlée infused with rich dark chocolate, finished with a caramelized sugar top.</p>
+        <p class="price">$5.50</p>
+        <button class="view-details" data-product="choco-brulee">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Classic Crème Brûlée -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/cream_brulee.webp" alt="Classic Crème Brûlée" />
+      </div>
+      <div class="product-info">
+        <h3>Classic Crème Brûlée</h3>
+        <p>Silky smooth vanilla custard topped with crunchy caramelized sugar.</p>
+        <p class="price">$5.00</p>
+        <button class="view-details" data-product="classic-brulee">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Cherry Cheesecake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/cherry.webp" alt="Cherry Cheesecake" />
+      </div>
+      <div class="product-info">
+        <h3>Cherry Cheesecake</h3>
+        <p>Rich and creamy cheesecake topped with a layer of sweet-tart cherry compote.</p>
+        <p class="price">$28.00</p>
+        <button class="view-details" data-product="cherry-cheesecake">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Strawberry Cheesecake -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/StrawberryCheesecake.webp" alt="Strawberry Cheesecake" />
+      </div>
+      <div class="product-info">
+        <h3>Strawberry Cheesecake</h3>
+        <p>Classic baked cheesecake with fresh strawberry topping and biscuit base.</p>
+        <p class="price">$29.00</p>
+        <button class="view-details" data-product="strawberry-cheesecake">View Details</button>
+      </div>
+    </div>
+  
+  </div>
+</section>
+<!-- Choco Cream Brûlée Modal -->
+<div id="choco-brulee-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/coco_brulee.webp" alt="Choco Cream Brûlée" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Choco Cream Brûlée</h3>
+          <p class="modal-price">$5.50</p>
+          <p class="price">160 gm</p>
+          <p class="modal-description">
+            A twist on the French classic, combining creamy custard with a deep, rich chocolate flavor and a caramelized sugar crust.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Dark chocolate infused custard</li>
+              <li>Freshly torched caramel top</li>
+              <li>Contains dairy and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per serving)</h4>
+            <p>Calories: 340 | Fat: 22g | Carbs: 28g | Protein: 5g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Classic Crème Brûlée Modal -->
+  <div id="classic-brulee-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/cream_brulee.webp" alt="Classic Crème Brûlée" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Classic Crème Brûlée</h3>
+          <p class="modal-price">$5.00</p>
+          <p class="price">160 gm</p>
+          <p class="modal-description">
+            Creamy vanilla custard base finished with a caramelized sugar top — a timeless dessert.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Vanilla bean infused</li>
+              <li>Freshly caramelized top</li>
+              <li>Contains dairy and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per serving)</h4>
+            <p>Calories: 300 | Fat: 20g | Carbs: 26g | Protein: 4g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Cherry Cheesecake Modal -->
+  <div id="cherry-cheesecake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/cherry.webp" alt="Cherry Cheesecake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Cherry Cheesecake</h3>
+          <p class="modal-price">$28.00</p>
+          <p class="price">180 gm</p>
+          <p class="modal-description">
+            Rich cheesecake on a buttery crust topped with sweet-tart cherry compote for a burst of fruity flavor.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Made with real cream cheese</li>
+              <li>Fresh cherry topping</li>
+              <li>Contains dairy, gluten, and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per slice)</h4>
+            <p>Calories: 360 | Fat: 22g | Carbs: 32g | Protein: 6g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Strawberry Cheesecake Modal -->
+  <div id="strawberry-cheesecake-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <img src="assets/StrawberryCheesecake.webp" alt="Strawberry Cheesecake" class="modal-product-image" />
+        <div class="modal-product-info">
+          <h3>Strawberry Cheesecake</h3>
+          <p class="modal-price">$29.00</p>
+          <p class="price">180 gm</p>
+          <p class="modal-description">
+            Creamy classic cheesecake topped with fresh strawberry glaze, perfect for any occasion.
+          </p>
+          <div class="modal-details">
+            <h4>Details</h4>
+            <ul>
+              <li>Fresh strawberry topping</li>
+              <li>Buttery biscuit base</li>
+              <li>Contains dairy, gluten, and eggs</li>
+            </ul>
+          </div>
+          <div class="modal-nutrition">
+            <h4>Nutrition Information (per slice)</h4>
+            <p>Calories: 370 | Fat: 23g | Carbs: 33g | Protein: 6g</p>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-cart"><i class="fas fa-download"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <h3>London Sweets</h3>
+      <div class="social-links">
+        <a href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.bing.com/search?q=twitter+sign+up&qs=SC&pq=twiitter+s&sc=12-10&cvid=ACEFA908FC9F4120BB28429226B09890&FORM=QBRE&sp=1&lq=0"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/login/"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>&copy; 2023 London Sweets. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
